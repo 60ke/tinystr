@@ -18,7 +18,8 @@ keywords = ["string", "str", "small", "tiny", "no_std"]
 categories = ["data-structures"]
 
 [dependencies]
-serde = { version = "1.0.123", optional = true }
+# serde = { version = "1.0.123", optional = true }
+serde = { version = "1.0", default-features = false, features = ["alloc"] }
 tinystr-macros = { version = "0.2", path = "./macros" }
 tinystr-raw = { version = "0.1.1", path = "./raw" }
 
